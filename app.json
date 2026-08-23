@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Raffle",
+    "slug": "raffle",
+    "scheme": "raffle",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Raffle uses your photo library so promoters can add a photo of the item they submit."
+        }
+      ],
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.raffleapp.raffle"
+    },
+    "android": {
+      "package": "com.raffleapp.raffle"
+    }
+  }
+}
