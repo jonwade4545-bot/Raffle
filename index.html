@@ -67,7 +67,12 @@
       </div>
     </section>
 
-    <section id="authView" class="view">
+    <section id="mineView" class="view">
+<button class="back text-button" data-home>← Back</button>
+<div class="section-head"><h2>My promotions</h2><button id="mineCreate" class="btn secondary">Create new</button></div>
+<div id="mineGrid" class="grid"></div><div id="mineEmpty" class="empty hidden">You haven't created any promotions yet.</div></section>
+<section id="detailView" class="view"><button class="back text-button" id="detailBack">← Back</button><div id="detailBox"></div></section>
+<section id="authView" class="view">
       <button class="back text-button" data-home>← Back</button>
       <div class="card form-card">
         <h2 id="authTitle">Log in</h2>
@@ -89,7 +94,7 @@
   <nav class="bottom-nav">
     <button data-home>Home</button>
     <button id="navCreate">Create</button>
-    <button id="navAccount">Account</button>
+    <button id="navMine">My Promotions</button>
   </nav>
 
   <script type="module" src="./app.js"></script>

@@ -168,3 +168,5 @@ input:focus, textarea:focus { border-color:#999; }
   .hero h1 { font-size: 44px; }
   .topbar { padding: 12px 14px; }
 }
+
+.detail-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;max-width:760px;margin:auto}.detail-image{width:100%;max-height:420px;object-fit:cover;background:#ececec}.detail-body{padding:22px}.detail-body h1{font-size:34px;margin:6px 0}.status{font-weight:800;text-transform:capitalize}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
