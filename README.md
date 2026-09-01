@@ -1,27 +1,37 @@
-# Raffle
 
-Expo / React Native prototype connected to the live Supabase backend.
+# Raffle Web Starter
 
-## Current pre-App Store build
+This is a lightweight, mobile-friendly web version of Raffle connected to the existing Supabase backend.
 
-This build includes authentication, live promotions, free entries, promoter submissions, admin review, item image upload, in-app rules, moderation/reporting, auditable winner selection, winner status, notification registration, and the promotion-service order/payment abstraction.
+## Included
+- Responsive homepage
+- Supabase connection using the project's publishable key
+- Login
+- Signup
+- Logout
+- Live promotion feed
+- Create-promotion draft form
+- Mobile bottom navigation
+- No Expo or app-store build required
 
-### Run locally
+## Run locally
+Because this uses JavaScript modules, serve the folder with any simple web server.
 
-1. Install Node.js.
-2. In this folder run `npm install`.
-3. For Expo-compatible native package versions, if npm reports a version mismatch run:
-   `npx expo install expo-image-picker expo-notifications expo-constants`
-4. Run `npx expo start`.
+Examples:
+- VS Code Live Server
+- `python3 -m http.server 8080`
+- Netlify / Vercel / Cloudflare Pages / GitHub Pages
 
-The included `.env` contains only the Supabase project URL and publishable client key. Never add a Supabase service-role key to the app.
+Then open the provided local or hosted URL in Safari or Chrome.
 
-## Payment design
+## Important
+Only the Supabase publishable key is used in browser code. Never place a Supabase secret/service-role key in this website.
 
-Entries are free and no purchase is required. Promotion-service purchases are stored separately from entries. iOS production purchases are intended to use Apple In-App Purchase; Android uses Play Billing; web can later use an appropriate web processor. Store product activation and payout banking are completed during the App Store / store-account setup stage.
-
-## Legal note
-
-The current official-rules text is explicitly marked as a draft for product testing. It must be replaced with jurisdiction-specific, counsel-approved production rules before public launch.
-
-See `PRE_APP_STORE_TEST_REPORT.md` for the verification performed and the checks intentionally reserved for Step 8.
+## Next recommended build steps
+1. Promotion detail page
+2. Enter-promotion flow
+3. Profile/account screen
+4. Promoter submission screen
+5. Admin moderation screen
+6. Stripe web checkout for promotion services
+7. Real domain + production hosting
